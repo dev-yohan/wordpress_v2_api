@@ -8,6 +8,9 @@ Gem::Specification.new do |s|
   s.email       = 'yohanmorales@hotmail.com'
   s.files       =  Dir['lib/**/*.rb']
   s.add_runtime_dependency 'httparty', '~> 0.13', '>= 0.13.7'
+  s.add_development_dependency "bundler", "~> 1.5"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "rspec"
   s.homepage    = 'http://www.rubygems.org'
   s.license     = 'MIT' 
 end	
