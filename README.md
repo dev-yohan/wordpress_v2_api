@@ -30,3 +30,20 @@ http://v2.wp-api.org/reference/
 **Paginate posts**
 
     WpApi::Content::Entity.get_entities('/wp-json/wp/v2/posts', {query:{page:1, per_page: 10}})
+
+**Retrieve specific post**
+
+    WpApi::Content::Entity.get_entities('/wp-json/wp/v2/posts/<post_id>')
+
+**Retrieve all categories**
+
+    WpApi::Content::Entity.get_entities('/wp-json/wp/v2/categories')
+
+**Paginate categories**
+
+    WpApi::Content::Entity.get_entities('/wp-json/wp/v2/categories', {query:{page:1, per_page: 10}})
+
+**Retrieve specific category**
+
+    WpApi::Content::Entity.get_entities('/wp-json/wp/v2/categories/<category_id>')
+  
