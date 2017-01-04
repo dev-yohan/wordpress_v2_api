@@ -3,10 +3,7 @@ module WpApi::Content
  class PostType
 
    def self.get_types(**params)
-   	  params.merge!(WpApi.configuration.options)
-      HTTParty.get("#{WpApi.configuration.base_uri}/wp-json/wp/v2/types", 
-      	params,
-      ).parsed_response
+      WpApi::Content::Entity.get_entities('/wp-json/wp/v2/types', params)
    end
 
    def self.get(id)

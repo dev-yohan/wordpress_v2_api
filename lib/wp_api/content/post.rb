@@ -3,11 +3,7 @@ module WpApi::Content
  class Post
 
    def self.get_posts(**params)
-      puts WpApi.configuration.base_uri
-   	  params.merge!(WpApi.configuration.options)
-      HTTParty.get("#{WpApi.configuration.base_uri}/wp-json/wp/v2/posts",
-      	params,
-      ).parsed_response
+      WpApi::Content::Entity.get_entities('/wp-json/wp/v2/posts', params)
    end
 
    def self.get(id)

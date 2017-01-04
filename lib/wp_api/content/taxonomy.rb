@@ -3,10 +3,7 @@ module WpApi::Content
  class Taxonomy
 
    def self.get_taxonomies(**params)
-   	  params.merge!(WpApi.configuration.options)
-      HTTParty.get("#{WpApi.configuration.base_uri}/wp-json/wp/v2/taxonomies", 
-      	params,
-      ).parsed_response
+      WpApi::Content::Entity.get_entities('/wp-json/wp/v2/taxonomies', params)
    end
 
    def self.get(id)

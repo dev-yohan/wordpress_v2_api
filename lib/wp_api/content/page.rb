@@ -2,10 +2,7 @@ require 'httparty'
 module WpApi::Content
  class Page
    def self.get_pages(**params)
-   	  params.merge!(WpApi.configuration.options)
-      HTTParty.get("#{WpApi.configuration.base_uri}/wp-json/wp/v2/pages", 
-      	params,
-      ).parsed_response
+      WpApi::Content::Entity.get_entities('/wp-json/wp/v2/pages', params)
    end
 
    def self.get_page(id)
