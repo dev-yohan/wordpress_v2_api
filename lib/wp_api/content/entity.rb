@@ -1,3 +1,4 @@
+require 'httparty'
 module WpApi::Content
   class Entity
     def self.get_entities(path, **params)
