@@ -1,4 +1,5 @@
 require 'wp_api/configuration'
+require 'wp_api/content/entity'
 require 'wp_api/content/post'
 require 'wp_api/content/page'
 require 'wp_api/content/media'

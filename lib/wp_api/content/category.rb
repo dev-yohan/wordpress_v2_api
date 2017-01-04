@@ -1,11 +1,9 @@
 require 'httparty'
-module WpApi::Content
- class Category
+ module WpApi::Content
+   class Category
+   #include WpApi::Content::Entity
    def self.get_categories(**params)
-   	  params.merge!(WpApi.configuration.options)
-      HTTParty.get("#{WpApi.configuration.base_uri}/wp-json/wp/v2/categories", 
-      	params,
-      ).parsed_response
+     WpApi::Content::Entity.get_entities('/wp-json/wp/v2/categories', params)
    end
 
    def self.get(id)
