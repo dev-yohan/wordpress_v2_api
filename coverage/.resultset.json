@@ -1,0 +1,93 @@
+{
+  "RSpec": {
+    "coverage": {
+      "c:/Users/yohan.morales/projects/wordpress_v2_api/lib/wp_api.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "c:/Users/yohan.morales/projects/wordpress_v2_api/lib/wp_api/configuration.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "c:/Users/yohan.morales/projects/wordpress_v2_api/lib/wp_api/content/entity.rb": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null
+      ],
+      "c:/Users/yohan.morales/projects/wordpress_v2_api/spec/posts_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "c:/Users/yohan.morales/projects/wordpress_v2_api/spec/spec_helper.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1
+      ]
+    },
+    "timestamp": 1483559139
+  }
+}

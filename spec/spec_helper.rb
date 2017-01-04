@@ -1,4 +1,5 @@
-#require 'WpApi'
+require 'codeclimate-test-reporter'
+require 'simplecov'
 require_relative '../lib/wp_api'
 
 ENV['HTTP_PROXY'] = 'http://10.28.2.251:3128'
