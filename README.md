@@ -11,16 +11,22 @@ Ruby gem to consume wordpress REST API V2: http://v2.wp-api.org/
 
 # Configuration
     config = WpApi::Configuration.new
-    config.base_uri = 'http://live-asuntos-de-mujeres.pantheonsite.io'
+    config.base_uri = <your_site_base_uri>
     config.options  = {
-      http_proxyaddr: '10.28.2.251',
-      http_proxyport: 3128
+      http_proxyaddr: <your_proxy_address>,
+      http_proxyport: <your_proxy_port>
     }
     WpApi.configuration = config
 
+# API Reference
+http://v2.wp-api.org/reference/
 
 # Examples
 
 **Retrieve all posts**
 
     WpApi::Content::Entity.get_entities('/wp-json/wp/v2/posts')
+
+**Paginate posts**
+
+    WpApi::Content::Entity.get_entities('/wp-json/wp/v2/posts', {query:{page:1, per_page: 10}})
