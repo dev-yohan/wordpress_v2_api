@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'wordpress_v2_api'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2016-12-21'
   s.summary     = 'Wordpress V2 API wrapper'
   s.description = 'This gem encapsulates request to WP V2 API to consume and manage wordpress content in ruby'
@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'codeclimate-test-reporter'
+  s.add_development_dependency 'dotenv'
   s.homepage    = 'http://www.rubygems.org'
   s.license     = 'MIT' 
 end	
